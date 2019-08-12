@@ -1,0 +1,42 @@
+[
+   {
+      "id": 1,
+      "matricula":"J-2123-S",
+      "marca": "Citroen",
+      "modelo": "ZX",
+      "etiqueta":{
+	"tipo": "B",
+	"color": "Amarillo"
+	}
+   },
+    {
+      "id": 2,
+      "matricula":"7469-FGT",
+      "marca": "BMW",
+      "modelo": "X5",
+      "etiqueta":{
+	"tipo": "B",
+	"color": "Amarillo"
+	}
+   },
+   {
+      "id": 3,
+      "matricula":"4747-JMD",
+      "marca": "KIA",
+      "modelo": "XCEED",
+      "etiqueta":{
+	"tipo": "ECO",
+	"color": "Verde-Azul"
+	}
+   },
+   {
+      "id": 4,
+      "matricula":"2267-HPZ",
+      "marca": "Audi",
+      "modelo": "Q3",
+      "etiqueta":{
+	"tipo": "C",
+	"color": "Verde"
+	}
+   }
+]
