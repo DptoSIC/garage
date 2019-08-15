@@ -23,17 +23,16 @@ public class GarageApplication {
 	
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 //		SpringApplication.run(GarageApplication.class, args);
-	
+
 //configuracion por XML		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Spring-config.xml");
-		Etiqueta etiqueta1 = context.getBean("etiqueta", Etiqueta.class);
+		Coche coche1 = context.getBean("coche", Coche.class);
 		
-		System.out.println(etiqueta1.getColor());
-		System.out.println(etiqueta1.getTipo());
+		System.out.println(coche1.toString());
 		
-		etiqueta1.setColor("azul");
-		System.out.println("coche ecologico");
-		System.out.println(etiqueta1.getColor());
+		
+		System.out.println("coche ecologico??");
+		System.out.println(coche1.getEtiqueta());
 		
 		System.out.println("funcionando...");
 

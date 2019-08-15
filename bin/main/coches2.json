@@ -1,6 +1,6 @@
 [
    {
-      "id": "1",
+      "id": 1,
       "matricula":"J-2123-S",
       "marca": "Citroen",
       "modelo": "ZX",
@@ -10,7 +10,7 @@
 	}
    },
     {
-      "id": "2",
+      "id": 2,
       "matricula":"7469-FGT",
       "marca": "BMW",
       "modelo": "X5",

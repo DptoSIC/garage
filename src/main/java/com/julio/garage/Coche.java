@@ -2,11 +2,14 @@ package com.julio.garage;
 
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.julio.otros.Etiqueta;
+
 
 @Entity
 public class Coche {
@@ -15,16 +18,9 @@ public class Coche {
 	private String matricula;
 	private String marca;
 	private String modelo;
+//	@Enumerated(EnumType.STRING)
 	private Etiqueta etiqueta;
-	
-	
-	
-	public Etiqueta getEtiqueta() {
-		return etiqueta;
-	}
-	public void setEtiqueta(Etiqueta etiqueta) {
-		this.etiqueta = etiqueta;
-	}
+		
 	@Id
 	public int getId() {
 		return id;
@@ -50,13 +46,19 @@ public class Coche {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	
+	public String getEtiqueta() {
+		return etiqueta.toString();
+	}
+	public void setEtiqueta(Etiqueta etiqueta) {
+		this.etiqueta = etiqueta; 
+	}
 	@Override
 	public String toString() {
 		return "Coche [id=" + id + ", matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo
-				+ ", etiqueta=" + etiqueta + "]";
+				+ ", pegatina=" + getEtiqueta() + "]";
 	}
 	
 	
+
 
 }
